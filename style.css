@@ -9,6 +9,10 @@ body{
 .tope:last-of-type {
     margin-left: auto;
   }
+.a1{
+    margin-right: 20px;
+    font-size: larger;
+}
 .nama{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
@@ -17,10 +21,23 @@ body{
 }
 .text1{
     color: rgb(180, 180, 180);
-    padding-top: 2px;
+    padding-top: 5px;
     padding-left: 5px;
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.aboutme{
+    padding-left: 40px;
+}
+.contact{
+    font-size: x-large;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+.intro{
+    font-size: x-large;
+    text-align: justify;
+    padding-top: 25px;
 }
 .content{
     padding-top: 3%;
