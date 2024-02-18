@@ -27,7 +27,7 @@
 
             </td>
             <td width="30%">
-                <img width="100%" src="https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/7843d8da-db26-4626-b2ee-f2cd99b89f0a-logo.png" alt="">
+                <img id="picture" width="100%" src="Foto.png" alt="">
                 
             </td>
             <td width=""   style="vertical-align: top; padding-top: 80px; font-size: xx-large;">
@@ -55,10 +55,17 @@
         function aboutme(){
             document.getElementById("aboutme").classList.remove("off");
             document.getElementById("contactme").classList.add("off");
+            document.getElementById("picture").classList.remove("off");
         }
         function contactme(){
             document.getElementById("aboutme").classList.add("off");
             document.getElementById("contactme").classList.remove("off");
+            document.getElementById("picture").classList.remove("off");
+        }
+        function work(){
+            document.getElementById("aboutme").classList.add("off");
+            document.getElementById("contactme").classList.add("off");
+            document.getElementById("picture").classList.add("off");
         }
     </script>
 </body>

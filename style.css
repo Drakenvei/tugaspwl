@@ -5,6 +5,7 @@ body{
     display: flex;
     padding-left: 20px;
     padding-top: 10px;
+    padding-right: 10px;
 }
 .tope:last-of-type {
     margin-left: auto;
@@ -57,4 +58,7 @@ body{
   }
 .off{
     display:none;
+}
+.work{
+    display: block;
 }
