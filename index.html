@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="nama">Nicholas Surya</div>
+        <div class="text1">amateur web developer</div>
+        <div class="tope">
+            <div onclick="aboutme()">About Me</div>
+            <div onclick="contactme()">Contact Me</div>
+        </div>
+    </div>
+    <table class="content"  width="100%">
+        <tr>
+            <td width="20%">
+
+            </td>
+            <td width="30%">
+                <img width="100%" src="https://zealy-webapp-images-prod.s3.eu-west-1.amazonaws.com/public/7843d8da-db26-4626-b2ee-f2cd99b89f0a-logo.png" alt="">
+                
+            </td>
+            <td width=""   style="vertical-align: top; padding-top: 60px; font-size: xx-large;">
+                <div id="aboutme" class="nama">
+                    Nicholas Surya
+
+                </div>
+                <div id="contactme" class="off">
+                    instagram
+                </div>
+            </td>
+            
+            <td width="20%">
+
+            </td>
+        </tr>
+    </table>
+    <div class="footer">Nicholas ©<br>2024</div>
+    <script>
+        function aboutme(){
+            document.getElementById("aboutme").classList.remove("off");
+            document.getElementById("contactme").classList.add("off");
+        }
+        function contactme(){
+            document.getElementById("aboutme").classList.add("off");
+            document.getElementById("contactme").classList.remove("off");
+        }
+    </script>
 </body>
 </html>

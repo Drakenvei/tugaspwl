@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="top">
+    <div class="dropdown">
+        <div class="select">
+        <span class="selected">About Me</span>
+        <div class="arrow"></div>
+         </div>
+        <ul class="menu">
+        <li onclick="About()" class="active">About Me</li>
+        <li onclick="Contact()">Contact</li>
+        
+
+        </ul>
+        </div>
+    </div>
+    <div class="break"></div>
+    <div class="mid" id="mid">
+    <div> <img width="450em" src="./Foto.jpg" alt="cat"></div>
+    <div class="about" id="about"><div class="header">About Me</div> 
+    &emsp;  Hello, I'm Nicholas Ken Surya a College Student that is currently studying information technology in University of North Sumatra.
+    My journey in this academic realm has been an exhilarating one, filled with fascinating discoveries and a profound passion for leveraging technology to drive meaningful change.
+
+    </div>
+    <div class="contact off" id="contact">
+        <div class="header">Contacts</div>
+        <img src="./email.png" height="25px" alt="email"> Nicholaskensurya@gmail.com <br>
+        <img src="./phone.png" height="25px" alt="phone"> +62 895 6022 62947 <br>
+        <img src="./IG.png" height="25px" alt="insta"> @Nichol.assssss
+    </div>
+    <div class="break"></div>
+    
+
+
+
+
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(dropdown =>{
+            const select = dropdown.querySelector('.select');
+            const arrow = dropdown.querySelector('.arrow');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelectorAll('.menu li');
+            const selected = dropdown.querySelector('.selected');
+
+            select.addEventListener('click', ()=> {
+
+                select.classList.toggle('select-clicked');
+                arrow.classList.toggle('arrow-rotate');
+                menu.classList.toggle('menu-open');
+
+            })
+
+        
+
+        options.forEach(option =>{
+            option.addEventListener('click', ()=> {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                arrow.classList.remove('arrow-rotate');
+                menu.classList.remove('menu-open');
+
+                options.forEach(option => {
+                    option.classList.remove('active');
+                })
+                option.classList.add('active')
+                })
+            })
+        })
+
+        
+        function Contact(){
+            document.getElementById("contact").classList.add('on');
+            document.getElementById("about").classList.add('off');
+            document.getElementById("contact").classList.remove('off');
+            document.getElementById("about").classList.remove('on')
+        }
+        function About(){
+            document.getElementById("about").classList.add('on')
+            document.getElementById("about").classList.remove('off')
+            document.getElementById("contact").classList.add('off')
+            document.getElementById("contact").classList.remove('on')
+        }
+    
+    </script>
+</body>
+</html>
